@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Surf's test
-//
-//  Created by Ivan Shpuntov on 08.02.2023.
-//
-
 import UIKit
 
 @main

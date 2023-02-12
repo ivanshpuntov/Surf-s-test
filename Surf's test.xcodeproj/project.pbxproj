@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0CE8F9299933490075FF3A /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0CE8F8299933490075FF3A /* CarouselCell.swift */; };
+		BD0CE8FB2999413C0075FF3A /* HorizontalCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0CE8FA2999413C0075FF3A /* HorizontalCollectionViewLayout.swift */; };
 		BD34332B29943F520090269D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD34332A29943F520090269D /* AppDelegate.swift */; };
 		BD34332D29943F520090269D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD34332C29943F520090269D /* SceneDelegate.swift */; };
 		BD34332F29943F520090269D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD34332E29943F520090269D /* ViewController.swift */; };
 		BD34333229943F520090269D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD34333029943F520090269D /* Main.storyboard */; };
 		BD34333429943F530090269D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD34333329943F530090269D /* Assets.xcassets */; };
 		BD34333729943F530090269D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD34333529943F530090269D /* LaunchScreen.storyboard */; };
+		BD34334029980B340090269D /* MainColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD34333F29980B340090269D /* MainColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD0CE8F8299933490075FF3A /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
+		BD0CE8FA2999413C0075FF3A /* HorizontalCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionViewLayout.swift; sourceTree = "<group>"; };
 		BD34332729943F520090269D /* Surf's test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Surf's test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD34332A29943F520090269D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD34332C29943F520090269D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		BD34333329943F530090269D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD34333629943F530090269D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD34333829943F530090269D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD34333F29980B340090269D /* MainColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,25 @@
 			isa = PBXGroup;
 			children = (
 				BD34332A29943F520090269D /* AppDelegate.swift */,
+				BD34333329943F530090269D /* Assets.xcassets */,
+				BD0CE8F8299933490075FF3A /* CarouselCell.swift */,
+				BD0CE8FA2999413C0075FF3A /* HorizontalCollectionViewLayout.swift */,
+				BD34333829943F530090269D /* Info.plist */,
+				BD34333529943F530090269D /* LaunchScreen.storyboard */,
+				BD34333029943F520090269D /* Main.storyboard */,
+				BD34333E29980B090090269D /* Model */,
 				BD34332C29943F520090269D /* SceneDelegate.swift */,
 				BD34332E29943F520090269D /* ViewController.swift */,
-				BD34333029943F520090269D /* Main.storyboard */,
-				BD34333329943F530090269D /* Assets.xcassets */,
-				BD34333529943F530090269D /* LaunchScreen.storyboard */,
-				BD34333829943F530090269D /* Info.plist */,
 			);
 			path = "Surf's test";
+			sourceTree = "<group>";
+		};
+		BD34333E29980B090090269D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD34333F29980B340090269D /* MainColors.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +157,10 @@
 			files = (
 				BD34332F29943F520090269D /* ViewController.swift in Sources */,
 				BD34332B29943F520090269D /* AppDelegate.swift in Sources */,
+				BD0CE8FB2999413C0075FF3A /* HorizontalCollectionViewLayout.swift in Sources */,
+				BD34334029980B340090269D /* MainColors.swift in Sources */,
 				BD34332D29943F520090269D /* SceneDelegate.swift in Sources */,
+				BD0CE8F9299933490075FF3A /* CarouselCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +313,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +322,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanshpuntov.Surf-s-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +344,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +353,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanshpuntov.Surf-s-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
